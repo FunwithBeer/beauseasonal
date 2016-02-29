@@ -17,7 +17,7 @@ h1, h2, h3, h4 {
 header {
   padding: 0;
   margin: 0;
-  background-image: url(/public/images/barrel.jpg);
+  background-image: url(../images/barrel.jpg);
   background-size: cover;
   background-attachment: fixed;
   -webkit-filter: FlipH;
@@ -92,7 +92,7 @@ header {
 .keyHole {
   padding: 0;
   margin: 0;
-  background-image: url(/public/images/barrel.jpg);
+  background-image: url(../images/barrel.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 10rem; }
