@@ -1,0 +1,445 @@
+html, body {
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif; }
+
+img {
+  max-width: 100%; }
+
+.wrapper {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+  width: 90%; }
+
+h1, h2, h3, h4 {
+  font-family: 'Abril Fatface', cursive; }
+
+header {
+  padding: 0;
+  margin: 0;
+  background-image: url(/public/images/barrel.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  height: 100vh; }
+
+.headline {
+  padding-top: 54rem;
+  position: relative; }
+  .headline .titleLine {
+    position: absolute;
+    bottom: -4.6rem;
+    left: -6rem;
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap; }
+    .headline .titleLine .wheat {
+      width: 16%;
+      padding-right: 2rem;
+      padding-top: 2.8rem; }
+    .headline .titleLine h1 {
+      padding: 0;
+      margin: 0;
+      color: white;
+      font-family: "Abril Fatface", cursive;
+      font-size: 9rem;
+      font-weight: 400;
+      letter-spacing: 0.3rem; }
+  .headline div.divLine {
+    height: 14rem;
+    background-color: #A6BABB; }
+
+@media (max-width: 960px) {
+  .headline .titleLine {
+    left: 0;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+  .wheat {
+    width: 25%; }
+  h1 {
+    width: 75%; } }
+
+.beerIntro {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10rem 2rem; }
+  .beerIntro .beerIntroInfoDiv {
+    width: 60%;
+    padding-top: 4rem; }
+    .beerIntro .beerIntroInfoDiv h2 {
+      color: #532C19;
+      font-size: 4rem; }
+    .beerIntro .beerIntroInfoDiv p {
+      font-size: 1.8rem;
+      padding-right: 6rem; }
+
+.beerIntroImageDiv {
+  margin-left: 2rem; }
+
+.keyHole {
+  padding: 0;
+  margin: 0;
+  background-image: url(/public/images/barrel.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 10rem; }
+
+.beerGallery {
+  padding-top: 4rem; }
+  .beerGallery h3 {
+    color: #532C19;
+    font-size: 2.6rem;
+    padding-bottom: 3rem;
+    letter-spacing: 0.07rem; }
+
+.beerChoice {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .beerChoice .userSelection {
+    padding: 3%;
+    width: 33.3%;
+    text-align: center; }
+
+.beerDetails h2 {
+  font-size: 2rem; }
+
+.beerDetails p {
+  font-size: 1.4rem; }
+
+#content {
+  width: 85%;
+  height: 100%;
+  margin: 0 auto; }
+
+#map {
+  width: 100%;
+  /*height: 100vh;*/
+  height: 500px; }
+
+.formWrapper {
+  position: relative; }
+
+.beerChoiceWrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.labels {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.35s;
+  cursor: pointer; }
+
+.beerChoice img {
+  max-width: 200px;
+  max-height: 150px; }
+
+.radios {
+  display: none; }
+
+input[type=radio]:checked + label {
+  border: 5px solid #F6DFBC; }
+
+.submitButton {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 0;
+  margin-top: 50px;
+  padding: 25px; }
+  .submitButton input[type=submit] {
+    background: #C5A074;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Abril Fatface", cursive;
+    padding: 20px;
+    border: 2px solid #C5A074;
+    border-radius: 10px;
+    transition: all 0.35s;
+    outline: none;
+    letter-spacing: .10rem;
+    text-transform: capitalize; }
+    .submitButton input[type=submit]:hover {
+      background: white;
+      color: #C5A074; }
+
+.mapAndListwrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .mapAndListwrapper .mapWrapper {
+    width: 100%;
+    padding: 20px; }
+
+.storeResultsTitle {
+  font-size: 2.2rem; }
+
+.storeResults .storeDetails h2 {
+  font-size: 1.5rem; }
+
+.storeResults .storeDetails p {
+  font-size: 1.2rem; }
+
+footer {
+  margin-top: 3rem;
+  background-color: #A6BABB;
+  padding: 2rem 0 3rem; }
+  footer p, footer a {
+    font-size: 1.2rem;
+    margin: 0;
+    color: white; }
+    footer p:visited, footer a:visited {
+      color: white; }
+
+.devCredits a:hover {
+  color: rgba(238, 238, 238, 0.75); }
+
+.socialContainer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 14%; }
+  .socialContainer i.fa {
+    font-size: 3rem; }
+    .socialContainer i.fa:hover {
+      color: rgba(238, 238, 238, 0.75); }
+
+.footerInfo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+@media (max-width: 1000px) {
+  .wrapper .beerIntro .beerIntroImageDiv {
+    margin-left: 0;
+    position: relative;
+    top: 50px; } }
+
+@media (max-width: 767px) {
+  .beerChoice .userSelection {
+    width: 100%; } }
+
+@media (max-width: 580px) {
+  .mapAndListwrapper {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .mapAndListwrapper .storeResults {
+      width: 100%;
+      text-align: center; }
+  .beerIntro {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .beerIntro .beerIntroInfoDiv {
+      width: 100%;
+      padding-top: 2rem;
+      text-align: center; }
+    .beerIntro .beerIntroImageDiv {
+      display: none; }
+  .footerInfo {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center; }
+  .socialContainer {
+    padding-bottom: 4rem;
+    width: 40%; }
+  .devCredits {
+    text-align: center; } }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  box-sizing: border-box; }
