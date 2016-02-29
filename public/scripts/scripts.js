@@ -44,7 +44,7 @@ app.displayBeer = function (beerInfo) {
 		var beerName = $('<h2>').text(value.name);
 		if (value.image_url === null) {
 			// console.log('null', value);
-			var beerImage = $('<img>').attr('src', '/public/images/default_beer.png');
+			var beerImage = $('<img>').attr('src', '../images/default_beer.png');
 		} else {
 			var beerImage = $('<img>').attr('src', value.image_url);
 		};
