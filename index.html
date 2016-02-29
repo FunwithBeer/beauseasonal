@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./public/styles/style.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href="../public/images/beausfav.ico" rel="shortcut icon" type="image/x-icon" />
+	<title>Beau's Beers</title>
+</head>
+<body>
+	
+	<!-- beginning of header section -->
+	<header>
+	<div class="headline">
+		<div class="wrapper">
+			<div class="titleLine">
+				<img class="wheat" src="../public/images/wheatShaft.svg" alt="">
+				<h1>Beau's Seasonal</h1>
+			</div>
+		</div>
+		<div class="divLine"></div>
+	</div>
+	</header>
+	<!-- end of header section -->
+	<div class="wrapper">
+	<!-- beer intro section -->
+		<section class="beerIntro">
+			<div class="beerIntroInfoDiv">
+				<h2>A Beer for Every Palate</h2>
+				<p>At Beau’s we pride ourselves on innovation. Since 2006, our dedication to trying out new and diverse recipes has led to the creation of a varied family of beers that has then created a beer for any palate.</p>
+			</div>
+			<div class="beerIntroImageDiv">
+				<img src="../public/images/flight_circle.png" alt="">
+			</div>
+		</section>
+	</div>
+
+	<div class="keyHole"></div>
+
+	<div class="wrapper">
+		<!-- beginning of beer results section -->
+		<section class="beerGallery">
+			<h3>Choose a Beer to find the closest LCBO you can grab it from!</h3>
+			<div class="wrapper">
+				<!-- <div id="beerResults"></div> -->
+				<div class="beerResults">
+					<form action="" id="userBeerSelection">
+						<div class="formWrapper">
+							<div class="beerChoiceWrapper" data-role="content">
+								<div class="beerChoice" id="beerChoice" data-role="collapsible-"> 
+								</div>
+							</div>
+							<div class="submitButton">
+								<input type="submit" value="Get your booze!">
+							</div> <!-- END OF SUBMIT BUTTON -->
+						</div> <!-- END OF FORM WRAPPER -->
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- end of beer results section -->
+
+
+		
+		<!-- beginning of map and store list section -->
+		<section class="mapAndList">
+			<div class="mapAndListwrapper">
+				<div class="storeResultsWrapper">
+					<h2 class="storeResultsTitle"></h2>
+					<div id="storeResults" class="storeResults"></div>
+				</div>
+				<div class="mapWrapper">
+					<div id="map"></div>
+				</div>
+			</div>
+		</section>
+		<!-- end of map and store list section -->
+	</div>
+		<!-- beginning of footer section -->
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footerInfo">
+				<div class="devCredits">
+					<p>Design and development by: <a href="http://www.clareprowse.com" target="">Clare Prowse</a>, <a href="http://www.michellecodes.ca" target="">Michelle Chung</a>, and <a href="http://samaraljumaa.com" target="blank">Samar Aljumaa</a></p>
+					<p>Application built using <a href="https://lcboapi.com/">LCBO</a> Api, and <a href="https://maps.google.ca/
+					">Google Maps</a> API.</p>
+				</div>
+				<div class="socialContainer">
+					<a href="https://facebook.com/BeausBrewery" title="Facebook"><i class="fa fa-facebook-square"></i></a>
+					<a href="https://twitter.com/beausallnatural" title="Twitter"><i class="fa fa-twitter-square"></i></a>
+					<a href="https://instagram.com/beausallnatural/" title="Instagram"><i class="fa fa-instagram"></i></a>
+					<a href="https://vimeo.com/beaus" title="Vimeo"><i class="fa fa-vimeo-square"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<!-- end of footer section -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="./public/scripts/scripts.js"></script>
+
+	  
+	<script async defer 
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDje3zvGCqffO4ibhM_8GMft9l4x0gUHEY&callback=initMap">
+	</script>
+
+	
+</body>
+</html>	
+
